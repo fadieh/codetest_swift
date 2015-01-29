@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController, UISearchBarDelegate {
 
@@ -35,15 +36,24 @@ class ViewController: UIViewController, UISearchBarDelegate {
         var getJsonURL = getJson+city
         var postJsonURL = postJson+city
         
-        Alamofire.request(.GET, getJsonURL).responseJSON {
+        var jsonReceived = Alamofire.request(.GET, getJsonURL).responseJSON {
             (request, response, JSON, error) in
             println(JSON)
         }
-        
-//        Alamofire.request(.POST, postJsonURL).responseJSON {
-//            (request, response, JSON, error) in
-//            println(response)
-//        }
+
+//        let json = JSON(jsonReceived)
+//        let latitude = json["latitude"].stringValue
+//        let longitude = json["longitude"].stringValue
+//        println(latitude)
+//        println(longitude)
+//        
+//        let parameters = [
+//        "latitude": latitude,
+//            "longitude": longitude,
+//            "offset": 0
+//        ]
+//        
+//        println(parameters)
         
         
     }
