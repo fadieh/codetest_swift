@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		4D3ABE591A79B2460094523F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D567CFD1A796399005B5B85 /* Alamofire.framework */; };
 		4D3ABE5A1A79B2460094523F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D567CFD1A796399005B5B85 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4D3ABE651A79B2710094523F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3ABE4A1A79B21A0094523F /* SwiftyJSON.framework */; };
-		4D3ABE661A79B2710094523F /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3ABE4A1A79B21A0094523F /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4D567CD71A795737005B5B85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D567CD61A795737005B5B85 /* AppDelegate.swift */; };
 		4D567CD91A795737005B5B85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D567CD81A795737005B5B85 /* ViewController.swift */; };
 		4D567CDC1A795737005B5B85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D567CDA1A795737005B5B85 /* Main.storyboard */; };
@@ -22,47 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4D3ABE491A79B21A0094523F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D3ABE421A79B21A0094523F /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
-			remoteInfo = "SwiftyJSON iOS";
-		};
-		4D3ABE4B1A79B21A0094523F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D3ABE421A79B21A0094523F /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2E4FEFE619575BE100351305;
-			remoteInfo = SwiftyJSONTests;
-		};
-		4D3ABE4D1A79B21A0094523F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D3ABE421A79B21A0094523F /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 030B6CC31A6E16E800C2D4F1;
-			remoteInfo = "SwiftyJSON OSX";
-		};
-		4D3ABE4F1A79B21A0094523F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D3ABE421A79B21A0094523F /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 030B6CCD1A6E16E900C2D4F1;
-			remoteInfo = "SwiftyJSON OSXTests";
-		};
 		4D3ABE5B1A79B2460094523F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4D567CF61A796399005B5B85 /* Alamofire.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = "Alamofire iOS";
-		};
-		4D3ABE671A79B2710094523F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D3ABE421A79B21A0094523F /* SwiftyJSON.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
-			remoteInfo = "SwiftyJSON iOS";
 		};
 		4D567CE71A795737005B5B85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -110,7 +73,6 @@
 			files = (
 				4D567D081A7963F8005B5B85 /* Alamofire.framework in Embed Frameworks */,
 				4D3ABE5A1A79B2460094523F /* Alamofire.framework in Embed Frameworks */,
-				4D3ABE661A79B2710094523F /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,7 +80,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4D3ABE421A79B21A0094523F /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../../Downloads/SwiftyJSON-master-2/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
 		4D567CD11A795737005B5B85 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D567CD51A795737005B5B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D567CD61A795737005B5B85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,7 +100,6 @@
 			files = (
 				4D567D071A7963F8005B5B85 /* Alamofire.framework in Frameworks */,
 				4D3ABE591A79B2460094523F /* Alamofire.framework in Frameworks */,
-				4D3ABE651A79B2710094523F /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,21 +113,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4D3ABE431A79B21A0094523F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4D3ABE4A1A79B21A0094523F /* SwiftyJSON.framework */,
-				4D3ABE4C1A79B21A0094523F /* SwiftyJSONTests.xctest */,
-				4D3ABE4E1A79B21A0094523F /* SwiftyJSON.framework */,
-				4D3ABE501A79B21A0094523F /* SwiftyJSON OSXTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		4D567CC81A795737005B5B85 = {
 			isa = PBXGroup;
 			children = (
-				4D3ABE421A79B21A0094523F /* SwiftyJSON.xcodeproj */,
 				4D567CF61A796399005B5B85 /* Alamofire.xcodeproj */,
 				4D567CD31A795737005B5B85 /* Test */,
 				4D567CE91A795737005B5B85 /* TestTests */,
@@ -249,7 +197,6 @@
 			dependencies = (
 				4D567D0A1A7963F8005B5B85 /* PBXTargetDependency */,
 				4D3ABE5C1A79B2460094523F /* PBXTargetDependency */,
-				4D3ABE681A79B2710094523F /* PBXTargetDependency */,
 			);
 			name = Test;
 			productName = Test;
@@ -308,10 +255,6 @@
 					ProductGroup = 4D567CF71A796399005B5B85 /* Products */;
 					ProjectRef = 4D567CF61A796399005B5B85 /* Alamofire.xcodeproj */;
 				},
-				{
-					ProductGroup = 4D3ABE431A79B21A0094523F /* Products */;
-					ProjectRef = 4D3ABE421A79B21A0094523F /* SwiftyJSON.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -322,34 +265,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		4D3ABE4A1A79B21A0094523F /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = 4D3ABE491A79B21A0094523F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4D3ABE4C1A79B21A0094523F /* SwiftyJSONTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SwiftyJSONTests.xctest;
-			remoteRef = 4D3ABE4B1A79B21A0094523F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4D3ABE4E1A79B21A0094523F /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = 4D3ABE4D1A79B21A0094523F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4D3ABE501A79B21A0094523F /* SwiftyJSON OSXTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftyJSON OSXTests.xctest";
-			remoteRef = 4D3ABE4F1A79B21A0094523F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		4D567CFD1A796399005B5B85 /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -418,11 +333,6 @@
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
 			targetProxy = 4D3ABE5B1A79B2460094523F /* PBXContainerItemProxy */;
-		};
-		4D3ABE681A79B2710094523F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SwiftyJSON iOS";
-			targetProxy = 4D3ABE671A79B2710094523F /* PBXContainerItemProxy */;
 		};
 		4D567CE81A795737005B5B85 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -537,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -548,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
