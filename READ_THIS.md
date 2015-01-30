@@ -16,7 +16,7 @@ LIBRARIES USED
 
 BRIEF
 
-I was able to fetch the data from the server by implementing a request from the server using Alamofire. I then used Swift Optionals to return the data as a String. Unfortunately, trying to figure out how to successfully use Swift Optionals meant I couldn't send data back to the server to retrieve the offers. If I had gotten over this stumbling block then I would have worked initially to save the data as strings which I could then insert into an array of parameters to send back to the server to retrieve the offers using Alamofire, using the ResponseJSON method within the library to capture the response back similar to the Get request before. 
+I was able to fetch the data from the server by implementing a request from the server using Alamofire (which I installed locally into the project.) I then used Swift Optionals to return the data as a String. Unfortunately, trying to figure out how to successfully use Swift Optionals meant I couldn't send data back to the server to retrieve the offers. If I had gotten over this stumbling block then I would have worked initially to save the data as strings which I could then insert into an array of parameters to send back to the server to retrieve the offers using Alamofire, using the ResponseJSON method within the library to capture the response back similar to the Get request before. 
 
 I wasn't able to populate any Table Views unfortunately however my initial thought is that I would of been using the ScrollViewDidLoad method by turning the offers payload into an array and matching data into a specific cell by calling the index of the array inside cellForRowAtIndexPath.
 
