@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 import AlamofireSwiftyJSON
 
-class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource {
     
     @IBOutlet var tableView: UITableView!
     
@@ -25,11 +25,6 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    }
-    
-    func searchBar(searchBar: UISearchBar,
-        textDidChange searchText: String) {
-    
     }
     
     func getJson(city: String) {
@@ -66,6 +61,7 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate
                     self.images.append(jsonObj[i]["logoURL"].stringValue)
                     self.titles.append(jsonObj[i]["title"].stringValue)
                 }
+            self.tableView.reloadData()
 
             }
         }
