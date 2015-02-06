@@ -11,21 +11,19 @@ import Alamofire
 import SwiftyJSON
 import AlamofireSwiftyJSON
 
-class ViewController: UIViewController, UISearchBarDelegate {
+class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet var tableView:UITableView!
+    @IBOutlet var tableView: UITableView!
     
     let getJson = "http://ec2-54-69-64-196.us-west-2.compute.amazonaws.com:3000/geocode/"
     let postJson = "http://ec2-54-69-64-196.us-west-2.compute.amazonaws.com:3000/offers/"
     var city = ""
+    
+    var images: [String] = []
+    var titles: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
 
     }
     
@@ -34,8 +32,8 @@ class ViewController: UIViewController, UISearchBarDelegate {
     
     }
     
-    
     func getJson(city: String) {
+        
         var getJsonURL = getJson+city
         
         Alamofire.request(.GET, getJsonURL).responseJSON {
@@ -52,6 +50,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
     func postJson(latitudeString: AnyObject, longitudeString: AnyObject) {
         
         var postJsonURL = postJson+city
+        
         var postParameters : [ String : AnyObject] = [
             "latitude": latitudeString,
             "longitude": longitudeString,
@@ -60,17 +59,36 @@ class ViewController: UIViewController, UISearchBarDelegate {
         
         Alamofire.request(.POST, postJsonURL, parameters: postParameters, encoding: .JSON).responseJSON {
             (request, response, json, error) -> Void in
-            println(json!)
+            if (json != nil) {
+                var jsonObj = JSON(json!)
+                
+                for (var i = 0; i < 5; ++i) {
+                    self.images.append(jsonObj[i]["logoURL"].stringValue)
+                    self.titles.append(jsonObj[i]["title"].stringValue)
+                }
+
+            }
         }
         
-        
     }
-
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         searchBar.delegate = self;
         var city = searchBar.text
         self.getJson(city)
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.titles.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell:UITableViewCell = UITableViewCell(style:UITableViewCellStyle.Default, reuseIdentifier:"cell")
+        
+        cell.textLabel!.text = self.titles[indexPath.row]
+        
+        return cell
     }
     
 }

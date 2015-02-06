@@ -16,6 +16,8 @@
 		4D3901D81A8131CC00AAE075 /* AlamofireSwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3901D41A8131C500AAE075 /* AlamofireSwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4D3ABE591A79B2460094523F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D567CFD1A796399005B5B85 /* Alamofire.framework */; };
 		4D3ABE5A1A79B2460094523F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D567CFD1A796399005B5B85 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D4A97D31A8391C400295810 /* HanekeDemo.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D016B781A832F86000AF155 /* HanekeDemo.app */; };
+		4D4A97DA1A8391C900295810 /* HanekeDemo.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D016B781A832F86000AF155 /* HanekeDemo.app */; };
 		4D567CD71A795737005B5B85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D567CD61A795737005B5B85 /* AppDelegate.swift */; };
 		4D567CD91A795737005B5B85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D567CD81A795737005B5B85 /* ViewController.swift */; };
 		4D567CDC1A795737005B5B85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D567CDA1A795737005B5B85 /* Main.storyboard */; };
@@ -124,6 +126,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = "Alamofire iOS";
+		};
+		4D4A97D41A8391C400295810 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D016B6D1A832F86000AF155 /* Haneke.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 873E22F218AA90EF00E7919C;
+			remoteInfo = HanekeDemo;
+		};
+		4D4A97DB1A8391C900295810 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D016B6D1A832F86000AF155 /* Haneke.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 873E22F218AA90EF00E7919C;
+			remoteInfo = HanekeDemo;
 		};
 		4D567CE71A795737005B5B85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -341,6 +357,8 @@
 				4D3901CB1A812E7D00AAE075 /* PBXTargetDependency */,
 				4D3901DA1A8131CC00AAE075 /* PBXTargetDependency */,
 				4D016B7B1A832FB7000AF155 /* PBXTargetDependency */,
+				4D4A97D51A8391C400295810 /* PBXTargetDependency */,
+				4D4A97DC1A8391C900295810 /* PBXTargetDependency */,
 			);
 			name = Test;
 			productName = Test;
@@ -513,7 +531,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D4A97D31A8391C400295810 /* HanekeDemo.app in Resources */,
 				4D567CDC1A795737005B5B85 /* Main.storyboard in Resources */,
+				4D4A97DA1A8391C900295810 /* HanekeDemo.app in Resources */,
 				4D567CE11A795737005B5B85 /* LaunchScreen.xib in Resources */,
 				4D016B791A832FB7000AF155 /* HanekeDemo.app in Resources */,
 				4D567CDE1A795737005B5B85 /* Images.xcassets in Resources */,
@@ -574,6 +594,16 @@
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
 			targetProxy = 4D3ABE5B1A79B2460094523F /* PBXContainerItemProxy */;
+		};
+		4D4A97D51A8391C400295810 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HanekeDemo;
+			targetProxy = 4D4A97D41A8391C400295810 /* PBXContainerItemProxy */;
+		};
+		4D4A97DC1A8391C900295810 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HanekeDemo;
+			targetProxy = 4D4A97DB1A8391C900295810 /* PBXContainerItemProxy */;
 		};
 		4D567CE81A795737005B5B85 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
