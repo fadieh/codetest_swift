@@ -40,7 +40,7 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDataSour
         }
     }
     
-    func postJson(latitudeString: AnyObject, longitudeString: AnyObject) {
+    func postJson(latitudeString: String, longitudeString: String) {
         
         var postJsonURL = postJson+city
         
