@@ -9,7 +9,6 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
-import AlamofireSwiftyJSON
 
 class ViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource {
     
@@ -24,7 +23,6 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDataSour
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     func getJson(city: String) {
@@ -61,6 +59,7 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDataSour
                     self.images.append(jsonObj[i]["logoURL"].stringValue)
                     self.titles.append(jsonObj[i]["title"].stringValue)
                 }
+                
             self.tableView.reloadData()
 
             }
